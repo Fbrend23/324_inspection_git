@@ -189,13 +189,13 @@ Configuration (ne doit PAS contenir de secrets en prod)
 15. Pourquoi est-il important de **taguer** des versions dans un projet ?
 
 ```sh
-
+Pour avoir un versioning plus précis
 ```
 
 16. Que peut-on déduire du style de travail de l'équipe à partir de cet historique GIT ?
 
 ```sh
-
+Travail sur des branches pour ensuite les merges sur le main
 ```
 
 Bonne chance, et surtout... **ne vous perdez pas dans le log !** 😉
