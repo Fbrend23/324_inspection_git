@@ -118,13 +118,22 @@ Date:   Wed Nov 5 22:15:30 2025 +0100
 9. Quelles branches ont été fusionnées dans `main` ?
 
 ```sh
+ git branch --merged main -r
+  origin/HEAD -> origin/main
+  origin/feature/header
+  origin/feature/login
+  origin/hotfix/typo
+  origin/main
 
 ```
 
 10. Quelle branche **n'a pas été fusionnée** ? Pourquoi, selon vous ?
 
 ```sh
+ git branch --no-merged main -r
+origin/experiment/dark-mode
 
+ C'est une branche experimentale
 ```
 
 ### Partie 5 — Analyse du contenu
