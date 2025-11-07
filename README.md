@@ -141,25 +141,47 @@ origin/experiment/dark-mode
 11. Quelle est la **différence principale** entre les fichiers `index.html` dans les versions `v0.1` et `v0.2` et quelle commande permet de le voir rapidement ?
 
 ```sh
+ git diff v0.1 v0.2 -- index.html
+diff --git a/index.html b/index.html
+index 2019876..60ce2f7 100644
+--- a/index.html
++++ b/index.html
+@@ -6,6 +6,7 @@
+   <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
++  <header><nav><a href="/">Accueil</a> | <a href="#">Contact</a></nav></header>
+   <!-- NOTE HISTORIQUE: ancien slogan modifié plusieurs fois -->
+   <h1>Bienvenue sur notre site Wolrd!</h1>
+   <p id="tagline">Un site tout simple pour apprendre Git.</p>
 
 ```
 
 12. Que contient la branche `feature/login` ?
 
 ```sh
+git ls-tree --name-only origin/feature/login -r
+.gitignore
+README.md
+config.js
+docs/notes.md
+index.html
+login.html
+script.js
+style.css
 
 ```
 
 13. Dans quelle branche a été ajouté le code pour le **mode sombre** ?
 
 ```sh
-
+origin/experiment/dark-mode
 ```
 
 14. Quelle bonne pratique de sécurité est évoquée dans les commits du fichier `config.js` ?
 
 ```sh
-
+Configuration (ne doit PAS contenir de secrets en prod)
 ```
 
 ### Partie 6 — Réflexion
